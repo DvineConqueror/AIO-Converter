@@ -66,6 +66,19 @@ GitHub Actions minutes/storage quotas apply; the installer is about 0.8 GB and t
 full build can take tens of minutes. Candidate artifacts expire after 14 days;
 failure diagnostics after 7. GitHub Releases retain uploaded assets separately.
 
+### Missing Electron runtime during packaging
+
+Electron 45's npm package does not automatically download its desktop runtime.
+This project explicitly invokes its installer through the root `postinstall`,
+so `npm ci` creates `node_modules/electron/dist` before packaging. Do not use
+`npm ci --ignore-scripts` for desktop builds. The runtime download is needed on
+the build machine; the resulting application installer remains self-contained.
+
+If an older tag failed with `The specified electronDist does not exist`, commit
+the fix on main and build a new version/tag. Re-running the old workflow uses
+the old tagged source and cannot pick up a fix on main. A manual run on main
+can first verify the fix without creating a release.
+
 ## 3. Build the current release candidate
 
 After the first commit and push, version 0.2.0 is already in package.json:

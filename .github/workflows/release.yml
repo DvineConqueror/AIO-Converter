@@ -44,6 +44,8 @@ jobs:
           $sevenZip = (Get-Command 7z.exe -ErrorAction Stop).Source
           "AIO_SEVENZIP_BOOTSTRAP=$sevenZip" >> $env:GITHUB_ENV
       - run: npm ci
+      - name: Verify Electron runtime was installed
+        run: node -e "require('node:fs').accessSync(require('electron')); console.log('Electron runtime is ready for packaging')"
       - run: npm audit --audit-level=high
       - name: Acquire hash-checked engines and download tools
         run: npm run engines
