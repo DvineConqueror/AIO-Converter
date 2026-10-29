@@ -108,8 +108,8 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
-  draft-release:
-    name: Attach candidate to draft release
+  publish-release:
+    name: Publish Windows installer release
     if: github.event_name == 'push' && github.ref_type == 'tag'
     needs: build
     runs-on: ubuntu-latest
@@ -120,7 +120,7 @@ jobs:
         with:
           name: AIO-Converter-Windows-x64
           path: candidate
-      - name: Create or update draft only
+      - name: Upload verified assets and publish release
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -128,9 +128,26 @@ jobs:
           RELEASE_TAG: ${{ github.ref_name }}
         run: |
           set -euo pipefail
+          node --input-type=module -e '
+            import { readFileSync, readdirSync } from "node:fs";
+            import { createHash } from "node:crypto";
+            const version = process.env.RELEASE_TAG.slice(1);
+            const installer = `AIO-Converter-Setup-${version}.exe`;
+            const files = readdirSync("candidate");
+            if (!files.includes(installer)) throw Error("Expected Windows installer missing");
+            for (const name of [installer, `AIO-Converter-Source-${version}.zip`]) {
+              const expected = readFileSync(`candidate/${name}.sha256`, "utf8").trim().split(/\s+/)[0];
+              const actual = createHash("sha256").update(readFileSync(`candidate/${name}`)).digest("hex");
+              if (actual !== expected) throw Error(`Checksum mismatch: ${name}`);
+            }
+          '
           if gh release view "$RELEASE_TAG" --json isDraft > release-state.json; then
-            node -e 'if (!JSON.parse(require("fs").readFileSync("release-state.json")).isDraft) throw Error("Refusing to change a published release")'
+            if node -e 'process.exit(JSON.parse(require("fs").readFileSync("release-state.json")).isDraft ? 1 : 0)'; then
+              echo "Release is already published; keeping its assets unchanged."
+              exit 0
+            fi
           else
             gh release create "$RELEASE_TAG" --verify-tag --draft --title "AIO Converter $RELEASE_TAG (unsigned candidate)" --notes-file candidate/CI-CANDIDATE.md
           fi
           gh release upload "$RELEASE_TAG" candidate/* --clobber
+          gh release edit "$RELEASE_TAG" --draft=false --latest

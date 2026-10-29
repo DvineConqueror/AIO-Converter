@@ -4,9 +4,16 @@ An offline Windows 11 x64 file converter with optional online video/audio downlo
 
 ## Install
 
-Run `release/AIO-Converter-Setup-0.2.0.exe`. The full installer contains Electron, ImageMagick, FFmpeg, LibreOffice, Poppler, Pandoc, 7-Zip, yt-dlp and Deno. Installation and local conversion do not download anything. No Microsoft Office installation or account is required.
+Download the Windows x64 `AIO-Converter-Setup-<version>.exe` from
+[GitHub Releases](https://github.com/DvineConqueror/AIO-Converter/releases/latest),
+then run it. The full installer contains Electron, ImageMagick, FFmpeg, LibreOffice,
+Poppler, Pandoc, 7-Zip, yt-dlp and Deno. Installation and local conversion do not
+download anything. No Microsoft Office installation or account is required.
 
-The initial build is an **unsigned local release candidate**, not a cleared public release. Windows may show a reputation warning. Check RELEASE-CHECKLIST.md and VERIFICATION.md for the exact outstanding gates.
+The current build is an **unsigned release candidate**. Windows may show a
+reputation warning. Check RELEASE-CHECKLIST.md and VERIFICATION.md for outstanding
+clean-machine testing and third-party redistribution checks; publication does not
+mean those checks are complete.
 
 Installation is per user and creates a Start menu entry. To omit the desktop shortcut, launch the installer with `--no-desktop-shortcut` (for example, `& .\AIO-Converter-Setup-0.2.0.exe --no-desktop-shortcut` in PowerShell).
 
@@ -75,6 +82,7 @@ External engine processes remain native programs running as the current user; th
 
 GitHub Actions setup, first push and version-tag commands are in
 [docs/GITHUB-SETUP.md](docs/GITHUB-SETUP.md). Pushes/PRs run source checks;
-version tags build the full Windows installer and create a draft release.
+version tags build the full Windows installer, verify checksums, and publish a
+GitHub Release with the installer attached.
 
 `npm run dist` creates the full NSIS installer and a SHA-256 sidecar. Do not publish until all RELEASE-CHECKLIST.md gates are satisfied, including corresponding engine/dependency source materials and an offline clean-machine test. No auto-updater or telemetry is included. Website requests occur for downloads explicitly queued by the user.

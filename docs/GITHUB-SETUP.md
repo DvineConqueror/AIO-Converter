@@ -42,8 +42,8 @@ pushes. These server settings are manual; adding workflow YAML does not enable t
 | Trigger | Result |
 |---|---|
 | Push to `main`, any PR, manual CI run | Windows `npm ci`, tests, TypeScript/production build, high/critical dependency audit |
-| Actions → Windows installer → Run workflow | Full Windows x64 installer as a private workflow artifact; no GitHub Release |
-| Push a matching `v<package.json version>` tag | Same verified candidate, then assets attached to a **draft** GitHub Release |
+| Actions → Windows installer → Run workflow | Full Windows x64 installer as a workflow artifact; no GitHub Release |
+| Push a matching `v<package.json version>` tag | Same verified candidate, then a published GitHub Release with the Windows installer attached |
 
 Source checks do not acquire the large native bundle; two engine-dependent archive
 tests explicitly skip there. The installer job acquires it first and runs those
@@ -103,9 +103,15 @@ git push origin "v$releaseVersion"
 
 In **Actions → Windows installer**, download the `AIO-Converter-Windows-x64`
 artifact. On tag runs, the same installer, checksums, MIT app source ZIP, binary
-inventory, notices and current-run test reports appear under **Releases → Drafts**.
-Re-running a tag build updates its draft assets. It refuses to alter an already
-published release; use a new version/tag instead.
+inventory, notices and current-run test reports appear under **Releases**.
+The job validates installer/source checksums, uploads assets while the release is
+still a draft, then publishes it and marks it latest. Re-running an already
+published tag keeps its assets unchanged; use a new version/tag for changes.
+
+Earlier workflow versions stopped at a draft release. A successful job named
+"Attach candidate to draft release" therefore did not make a publicly visible
+release. v0.2.1 was published from its existing verified draft; newer tag builds
+using the updated workflow publish automatically.
 
 Check the installer checksum after extraction:
 
@@ -114,9 +120,10 @@ Get-FileHash .\AIO-Converter-Setup-0.2.0.exe -Algorithm SHA256
 Get-Content .\AIO-Converter-Setup-0.2.0.exe.sha256
 ```
 
-No automatic public publication or code signing is configured. Complete the
-clean-machine installation/uninstallation checks and exact engine/dependency
-source obligations before publishing a draft. The app source ZIP does not satisfy
+Matching version-tag pushes now authorize automatic public publication; manual
+workflow runs only build artifacts. No code signing is configured. Maintainers
+remain responsible for clean-machine checks and engine/dependency source
+obligations before pushing release tags. The app source ZIP does not satisfy
 the bundled engines' corresponding-source requirements. CI-CANDIDATE.md records
 the actual CI commit/run; VERIFICATION.md contains earlier local evidence.
 
@@ -138,4 +145,5 @@ node scripts/source-archive.mjs
 ```
 
 `npm run dist` explicitly disables electron-builder's automatic publishing. Only
-the dedicated tag job creates a draft release, after build and verification succeed.
+the dedicated tag job publishes the GitHub Release, after build and verification
+succeed and the assets have been uploaded.
