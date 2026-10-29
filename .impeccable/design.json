@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-28T15:00:08.606780+00:00",
+  "title": "Design System: AIO Converter",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Bg",
+        "tonalRamp": [
+          "oklch(15% 0.00287 264.54)",
+          "oklch(26% 0.00287 264.54)",
+          "oklch(38% 0.00287 264.54)",
+          "oklch(49% 0.00287 264.54)",
+          "oklch(61% 0.00287 264.54)",
+          "oklch(72% 0.00287 264.54)",
+          "oklch(84% 0.00287 264.54)",
+          "oklch(95% 0.00287 264.54)"
+        ]
+      },
+      "sidebar": {
+        "role": "neutral",
+        "displayName": "Sidebar",
+        "tonalRamp": [
+          "oklch(15% 0.00577 264.53)",
+          "oklch(26% 0.00577 264.53)",
+          "oklch(38% 0.00577 264.53)",
+          "oklch(49% 0.00577 264.53)",
+          "oklch(61% 0.00577 264.53)",
+          "oklch(72% 0.00577 264.53)",
+          "oklch(84% 0.00577 264.53)",
+          "oklch(95% 0.00577 264.53)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.00000 89.88)",
+          "oklch(26% 0.00000 89.88)",
+          "oklch(38% 0.00000 89.88)",
+          "oklch(49% 0.00000 89.88)",
+          "oklch(61% 0.00000 89.88)",
+          "oklch(72% 0.00000 89.88)",
+          "oklch(84% 0.00000 89.88)",
+          "oklch(95% 0.00000 89.88)"
+        ]
+      },
+      "raised": {
+        "role": "neutral",
+        "displayName": "Raised",
+        "tonalRamp": [
+          "oklch(15% 0.00000 89.88)",
+          "oklch(26% 0.00000 89.88)",
+          "oklch(38% 0.00000 89.88)",
+          "oklch(49% 0.00000 89.88)",
+          "oklch(61% 0.00000 89.88)",
+          "oklch(72% 0.00000 89.88)",
+          "oklch(84% 0.00000 89.88)",
+          "oklch(95% 0.00000 89.88)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Text",
+        "tonalRamp": [
+          "oklch(15% 0.01442 261.67)",
+          "oklch(26% 0.01442 261.67)",
+          "oklch(38% 0.01442 261.67)",
+          "oklch(49% 0.01442 261.67)",
+          "oklch(61% 0.01442 261.67)",
+          "oklch(72% 0.01442 261.67)",
+          "oklch(84% 0.01442 261.67)",
+          "oklch(95% 0.01442 261.67)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.02405 261.71)",
+          "oklch(26% 0.02405 261.71)",
+          "oklch(38% 0.02405 261.71)",
+          "oklch(49% 0.02405 261.71)",
+          "oklch(61% 0.02405 261.71)",
+          "oklch(72% 0.02405 261.71)",
+          "oklch(84% 0.02405 261.71)",
+          "oklch(95% 0.02405 261.71)"
+        ]
+      },
+      "faint": {
+        "role": "neutral",
+        "displayName": "Faint",
+        "tonalRamp": [
+          "oklch(15% 0.01043 261.79)",
+          "oklch(26% 0.01043 261.79)",
+          "oklch(38% 0.01043 261.79)",
+          "oklch(49% 0.01043 261.79)",
+          "oklch(61% 0.01043 261.79)",
+          "oklch(72% 0.01043 261.79)",
+          "oklch(84% 0.01043 261.79)",
+          "oklch(95% 0.01043 261.79)"
+        ]
+      },
+      "blue": {
+        "role": "primary",
+        "displayName": "Blue",
+        "tonalRamp": [
+          "oklch(15% 0.19627 261.74)",
+          "oklch(26% 0.19627 261.74)",
+          "oklch(38% 0.19627 261.74)",
+          "oklch(49% 0.19627 261.74)",
+          "oklch(61% 0.19627 261.74)",
+          "oklch(72% 0.19627 261.74)",
+          "oklch(84% 0.19627 261.74)",
+          "oklch(95% 0.19627 261.74)"
+        ]
+      },
+      "blue-hover": {
+        "role": "primary",
+        "displayName": "Blue Hover",
+        "tonalRamp": [
+          "oklch(15% 0.18353 262.34)",
+          "oklch(26% 0.18353 262.34)",
+          "oklch(38% 0.18353 262.34)",
+          "oklch(49% 0.18353 262.34)",
+          "oklch(61% 0.18353 262.34)",
+          "oklch(72% 0.18353 262.34)",
+          "oklch(84% 0.18353 262.34)",
+          "oklch(95% 0.18353 262.34)"
+        ]
+      },
+      "blue-wash": {
+        "role": "primary",
+        "displayName": "Blue Wash",
+        "tonalRamp": [
+          "oklch(15% 0.02154 265.76)",
+          "oklch(26% 0.02154 265.76)",
+          "oklch(38% 0.02154 265.76)",
+          "oklch(49% 0.02154 265.76)",
+          "oklch(61% 0.02154 265.76)",
+          "oklch(72% 0.02154 265.76)",
+          "oklch(84% 0.02154 265.76)",
+          "oklch(95% 0.02154 265.76)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Green",
+        "tonalRamp": [
+          "oklch(15% 0.10485 155.30)",
+          "oklch(26% 0.10485 155.30)",
+          "oklch(38% 0.10485 155.30)",
+          "oklch(49% 0.10485 155.30)",
+          "oklch(61% 0.10485 155.30)",
+          "oklch(72% 0.10485 155.30)",
+          "oklch(84% 0.10485 155.30)",
+          "oklch(95% 0.10485 155.30)"
+        ]
+      },
+      "red": {
+        "role": "secondary",
+        "displayName": "Red",
+        "tonalRamp": [
+          "oklch(15% 0.16504 21.90)",
+          "oklch(26% 0.16504 21.90)",
+          "oklch(38% 0.16504 21.90)",
+          "oklch(49% 0.16504 21.90)",
+          "oklch(61% 0.16504 21.90)",
+          "oklch(72% 0.16504 21.90)",
+          "oklch(84% 0.16504 21.90)",
+          "oklch(95% 0.16504 21.90)"
+        ]
+      },
+      "toolbar": {
+        "role": "neutral",
+        "displayName": "Toolbar",
+        "tonalRamp": [
+          "oklch(15% 0.00287 264.54)",
+          "oklch(26% 0.00287 264.54)",
+          "oklch(38% 0.00287 264.54)",
+          "oklch(49% 0.00287 264.54)",
+          "oklch(61% 0.00287 264.54)",
+          "oklch(72% 0.00287 264.54)",
+          "oklch(84% 0.00287 264.54)",
+          "oklch(95% 0.00287 264.54)"
+        ]
+      },
+      "dark-bg": {
+        "role": "neutral",
+        "displayName": "Dark Bg",
+        "tonalRamp": [
+          "oklch(15% 0.01080 260.68)",
+          "oklch(26% 0.01080 260.68)",
+          "oklch(38% 0.01080 260.68)",
+          "oklch(49% 0.01080 260.68)",
+          "oklch(61% 0.01080 260.68)",
+          "oklch(72% 0.01080 260.68)",
+          "oklch(84% 0.01080 260.68)",
+          "oklch(95% 0.01080 260.68)"
+        ]
+      },
+      "dark-sidebar": {
+        "role": "neutral",
+        "displayName": "Dark Sidebar",
+        "tonalRamp": [
+          "oklch(15% 0.01103 260.67)",
+          "oklch(26% 0.01103 260.67)",
+          "oklch(38% 0.01103 260.67)",
+          "oklch(49% 0.01103 260.67)",
+          "oklch(61% 0.01103 260.67)",
+          "oklch(72% 0.01103 260.67)",
+          "oklch(84% 0.01103 260.67)",
+          "oklch(95% 0.01103 260.67)"
+        ]
+      },
+      "dark-surface": {
+        "role": "neutral",
+        "displayName": "Dark Surface",
+        "tonalRamp": [
+          "oklch(15% 0.01442 261.67)",
+          "oklch(26% 0.01442 261.67)",
+          "oklch(38% 0.01442 261.67)",
+          "oklch(49% 0.01442 261.67)",
+          "oklch(61% 0.01442 261.67)",
+          "oklch(72% 0.01442 261.67)",
+          "oklch(84% 0.01442 261.67)",
+          "oklch(95% 0.01442 261.67)"
+        ]
+      },
+      "dark-raised": {
+        "role": "neutral",
+        "displayName": "Dark Raised",
+        "tonalRamp": [
+          "oklch(15% 0.01792 262.22)",
+          "oklch(26% 0.01792 262.22)",
+          "oklch(38% 0.01792 262.22)",
+          "oklch(49% 0.01792 262.22)",
+          "oklch(61% 0.01792 262.22)",
+          "oklch(72% 0.01792 262.22)",
+          "oklch(84% 0.01792 262.22)",
+          "oklch(95% 0.01792 262.22)"
+        ]
+      },
+      "dark-text": {
+        "role": "neutral",
+        "displayName": "Dark Text",
+        "tonalRamp": [
+          "oklch(15% 0.00866 264.52)",
+          "oklch(26% 0.00866 264.52)",
+          "oklch(38% 0.00866 264.52)",
+          "oklch(49% 0.00866 264.52)",
+          "oklch(61% 0.00866 264.52)",
+          "oklch(72% 0.00866 264.52)",
+          "oklch(84% 0.00866 264.52)",
+          "oklch(95% 0.00866 264.52)"
+        ]
+      },
+      "dark-muted": {
+        "role": "neutral",
+        "displayName": "Dark Muted",
+        "tonalRamp": [
+          "oklch(15% 0.02002 255.56)",
+          "oklch(26% 0.02002 255.56)",
+          "oklch(38% 0.02002 255.56)",
+          "oklch(49% 0.02002 255.56)",
+          "oklch(61% 0.02002 255.56)",
+          "oklch(72% 0.02002 255.56)",
+          "oklch(84% 0.02002 255.56)",
+          "oklch(95% 0.02002 255.56)"
+        ]
+      },
+      "dark-faint": {
+        "role": "neutral",
+        "displayName": "Dark Faint",
+        "tonalRamp": [
+          "oklch(15% 0.02289 261.22)",
+          "oklch(26% 0.02289 261.22)",
+          "oklch(38% 0.02289 261.22)",
+          "oklch(49% 0.02289 261.22)",
+          "oklch(61% 0.02289 261.22)",
+          "oklch(72% 0.02289 261.22)",
+          "oklch(84% 0.02289 261.22)",
+          "oklch(95% 0.02289 261.22)"
+        ]
+      },
+      "dark-blue": {
+        "role": "primary",
+        "displayName": "Dark Blue",
+        "tonalRamp": [
+          "oklch(15% 0.12935 262.76)",
+          "oklch(26% 0.12935 262.76)",
+          "oklch(38% 0.12935 262.76)",
+          "oklch(49% 0.12935 262.76)",
+          "oklch(61% 0.12935 262.76)",
+          "oklch(72% 0.12935 262.76)",
+          "oklch(84% 0.12935 262.76)",
+          "oklch(95% 0.12935 262.76)"
+        ]
+      },
+      "dark-blue-hover": {
+        "role": "primary",
+        "displayName": "Dark Blue Hover",
+        "tonalRamp": [
+          "oklch(15% 0.09128 263.87)",
+          "oklch(26% 0.09128 263.87)",
+          "oklch(38% 0.09128 263.87)",
+          "oklch(49% 0.09128 263.87)",
+          "oklch(61% 0.09128 263.87)",
+          "oklch(72% 0.09128 263.87)",
+          "oklch(84% 0.09128 263.87)",
+          "oklch(95% 0.09128 263.87)"
+        ]
+      },
+      "dark-blue-wash": {
+        "role": "primary",
+        "displayName": "Dark Blue Wash",
+        "tonalRamp": [
+          "oklch(15% 0.06335 260.90)",
+          "oklch(26% 0.06335 260.90)",
+          "oklch(38% 0.06335 260.90)",
+          "oklch(49% 0.06335 260.90)",
+          "oklch(61% 0.06335 260.90)",
+          "oklch(72% 0.06335 260.90)",
+          "oklch(84% 0.06335 260.90)",
+          "oklch(95% 0.06335 260.90)"
+        ]
+      },
+      "dark-green": {
+        "role": "secondary",
+        "displayName": "Dark Green",
+        "tonalRamp": [
+          "oklch(15% 0.10037 155.92)",
+          "oklch(26% 0.10037 155.92)",
+          "oklch(38% 0.10037 155.92)",
+          "oklch(49% 0.10037 155.92)",
+          "oklch(61% 0.10037 155.92)",
+          "oklch(72% 0.10037 155.92)",
+          "oklch(84% 0.10037 155.92)",
+          "oklch(95% 0.10037 155.92)"
+        ]
+      },
+      "dark-red": {
+        "role": "secondary",
+        "displayName": "Dark Red",
+        "tonalRamp": [
+          "oklch(15% 0.12106 16.36)",
+          "oklch(26% 0.12106 16.36)",
+          "oklch(38% 0.12106 16.36)",
+          "oklch(49% 0.12106 16.36)",
+          "oklch(61% 0.12106 16.36)",
+          "oklch(72% 0.12106 16.36)",
+          "oklch(84% 0.12106 16.36)",
+          "oklch(95% 0.12106 16.36)"
+        ]
+      },
+      "dark-toolbar": {
+        "role": "neutral",
+        "displayName": "Dark Toolbar",
+        "tonalRamp": [
+          "oklch(15% 0.01080 260.68)",
+          "oklch(26% 0.01080 260.68)",
+          "oklch(38% 0.01080 260.68)",
+          "oklch(49% 0.01080 260.68)",
+          "oklch(61% 0.01080 260.68)",
+          "oklch(72% 0.01080 260.68)",
+          "oklch(84% 0.01080 260.68)",
+          "oklch(95% 0.01080 260.68)"
+        ]
+      },
+      "primary-ink": {
+        "role": "neutral",
+        "displayName": "Primary Ink",
+        "tonalRamp": [
+          "oklch(15% 0.00000 89.88)",
+          "oklch(26% 0.00000 89.88)",
+          "oklch(38% 0.00000 89.88)",
+          "oklch(49% 0.00000 89.88)",
+          "oklch(61% 0.00000 89.88)",
+          "oklch(72% 0.00000 89.88)",
+          "oklch(84% 0.00000 89.88)",
+          "oklch(95% 0.00000 89.88)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Workspace page heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base interface text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Sidebar navigation."
+      }
+    },
+    "shadows": [
+      {
+        "name": "floating-light",
+        "value": "0 12px 36px #1c2a4318",
+        "purpose": "Light appearance picker and toast."
+      },
+      {
+        "name": "floating-dark",
+        "value": "0 12px 36px #0004",
+        "purpose": "Dark appearance picker and toast."
+      },
+      {
+        "name": "active-navigation",
+        "value": "0 2px 6px #121b2910",
+        "purpose": "Active sidebar item."
+      },
+      {
+        "name": "primary-button",
+        "value": "0 2px 3px #11285315",
+        "purpose": "Primary conversion action."
+      },
+      {
+        "name": "drawer",
+        "value": "-10px 0 35px #10182818",
+        "purpose": "Nonmodal settings drawer."
+      }
+    ],
+    "motion": [
+      {
+        "name": "dropzone-state",
+        "value": "border-color .16s,background .16s",
+        "purpose": "Import hover and drag-over."
+      },
+      {
+        "name": "processing",
+        "value": "1.8s linear infinite",
+        "purpose": "Indeterminate progress; disabled under reduced motion."
+      },
+      {
+        "name": "button-press",
+        "value": "translateY(1px)",
+        "purpose": "Enabled press feedback; removed under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "860px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary Button from the desktop workspace.",
+      "html": "<button class=\"ds-primary\">Convert 3 files <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.65\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-5-5 5 5-5 5\"/></svg></button>",
+      "css": ".ds-primary{font-family:\"Segoe UI Variable\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;display:inline-flex;align-items:center;gap:22px;cursor:pointer;border:0;line-height:1.3;background:#2463dc;color:#fff;padding:13px 18px;border-radius:9px;font-size:14px;font-weight:550;box-shadow:0 2px 3px #11285315}.ds-primary:hover:not(:disabled){background:#194fbe}.ds-primary:focus-visible{outline:2px solid var(--blue,#2463dc);outline-offset:4px}.ds-primary:not(:disabled):active{transform:translateY(1px)}.ds-primary:disabled{background:var(--faint,#e0e4eb);color:var(--muted,#656d7b);box-shadow:none}@media(prefers-reduced-motion:reduce){.ds-primary:active{transform:none}}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary Button from the desktop workspace.",
+      "html": "<button class=\"ds-secondary\">Choose folder</button>",
+      "css": ".ds-secondary{font-family:\"Segoe UI Variable\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;cursor:pointer;line-height:1.3;background:var(--surface,#fff);color:var(--text,#20242b);border:1px solid var(--faint,#e0e4eb);border-radius:8px;padding:10px 12px;font-size:.84rem}.ds-secondary:hover{background:var(--faint,#e0e4eb)}.ds-secondary:focus-visible{outline:2px solid var(--blue,#2463dc);outline-offset:4px}.ds-secondary:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-secondary:active{transform:none}}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Quiet Button from the desktop workspace.",
+      "html": "<button class=\"ds-quiet\">Add files</button>",
+      "css": ".ds-quiet{font-family:\"Segoe UI Variable\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;cursor:pointer;border:0;background:none;line-height:1.3;padding:8px;border-radius:6px;color:var(--muted,#656d7b);font-size:.76rem}.ds-quiet:hover{background:var(--faint,#e0e4eb);color:var(--text,#20242b)}.ds-quiet:focus-visible{outline:2px solid var(--blue,#2463dc);outline-offset:4px}.ds-quiet:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-quiet:active{transform:none}}"
+    },
+    {
+      "name": "Dimension Input",
+      "kind": "input",
+      "refersTo": "input-dimension",
+      "description": "Dimension Input from the desktop workspace.",
+      "html": "<label class=\"ds-dimension\">Width<input type=\"number\" min=\"1\" max=\"16384\" placeholder=\"Original\"></label>",
+      "css": ".ds-dimension{font-family:\"Segoe UI Variable\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;display:block;color:var(--muted,#656d7b);font-size:.74rem}.ds-dimension input{font-family:\"Segoe UI Variable\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;width:100%;display:block;margin-top:5px;border:1px solid var(--faint,#e0e4eb);border-radius:6px;background:var(--bg,#f7f8fa);color:var(--text,#20242b);padding:8px;caret-color:var(--blue,#2463dc)}.ds-dimension input::placeholder{color:var(--muted,#656d7b)}.ds-dimension input:focus-visible{outline:2px solid var(--blue,#2463dc);outline-offset:4px}"
+    },
+    {
+      "name": "Navigation Item",
+      "kind": "nav",
+      "refersTo": "navigation-item",
+      "description": "Navigation Item from the desktop workspace.",
+      "html": "<nav><button class=\"ds-nav\" aria-current=\"page\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.65\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h15m-5-5 5 5-5 5\"/></svg> Convert files</button></nav>",
+      "css": ".ds-nav{font-family:\"Segoe UI Variable\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;display:flex;align-items:center;gap:8px;cursor:pointer;border:0;background:var(--surface,#fff);color:var(--blue,#2463dc);box-shadow:0 2px 6px #121b2910;padding:12px 13px;border-radius:9px;font-size:.91rem;font-weight:550;line-height:1.3}.ds-nav:hover{background:var(--faint,#e0e4eb)}.ds-nav:focus-visible{outline:2px solid var(--blue,#2463dc);outline-offset:4px}.ds-nav:active{transform:translateY(1px)}@media(prefers-reduced-motion:reduce){.ds-nav:active{transform:none}}"
+    },
+    {
+      "name": "Format Tag",
+      "kind": "chip",
+      "refersTo": "format-tag",
+      "description": "Format Tag from the desktop workspace.",
+      "html": "<span class=\"ds-tag\">PNG</span>",
+      "css": ".ds-tag{font-family:\"Segoe UI Variable\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;display:inline-block;color:var(--text,#20242b);background:var(--surface,#fff);font-size:.7rem;padding:3px 6px;margin:2px 4px 2px 0;border-radius:4px}"
+    },
+    {
+      "name": "Import Drop Area",
+      "kind": "card",
+      "refersTo": "dropzone",
+      "description": "Import Drop Area from the desktop workspace.",
+      "html": "<button class=\"ds-drop\"><strong>Drop your files here</strong><span>or browse files</span></button>",
+      "css": ".ds-drop{font-family:\"Segoe UI Variable\",-apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;width:100%;min-height:210px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;cursor:pointer;color:var(--text,#20242b);border:1.5px dashed #b8c9e5;border-radius:15px;background:var(--surface,#fff);padding:24px;transition:border-color .16s,background .16s}.ds-drop strong{font-size:1.15rem;font-weight:600;letter-spacing:-.015em}.ds-drop span{font-size:.86rem;color:var(--muted,#656d7b)}.ds-drop:hover{border-color:var(--blue,#2463dc);background:var(--blue-wash,#e9f0ff)}.ds-drop:focus-visible{outline:2px solid var(--blue,#2463dc);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-drop{transition:none}}@media(prefers-contrast:more){.ds-drop{border-style:solid}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Conversion Desk",
+    "overview": "AIO Converter is a restrained desktop utility: cool neutral surfaces, clear blue actions, and a single mixed-file queue. System typography and native Windows window controls make it belong on the device. Apple-inspired precision appears in spacing, alignment, and responsiveness.\n\nThe workspace favors direct controls and legible file states. Tonal surfaces carry most of the depth; translucency is confined to the toolbar. Light, dark, and system appearance are equally supported. Raster artwork is unnecessary for this interface.",
+    "keyCharacteristics": [
+      "Cool neutral surfaces with blue action emphasis.",
+      "System typography, compact controls, and plain queue rows.",
+      "Subtle toolbar translucency with accessible alternatives.",
+      "Inline SVG icons and native Windows window controls."
+    ],
+    "rules": [
+      {
+        "name": "The Action Blue Rule",
+        "body": "Use blue for actions, selection, focus, and running progress; reserve green and red for success and failure.",
+        "section": "colors"
+      },
+      {
+        "name": "The System Type Rule",
+        "body": "Use the existing system font stack for headings and controls, as explicitly required by the product brief.",
+        "section": "typography"
+      },
+      {
+        "name": "The Quiet Depth Rule",
+        "body": "Separate everyday surfaces with tone and fine borders; reserve substantial shadows for floating UI.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve light, dark, and system appearance with semantic surface and text variables.",
+      "Do show visible keyboard focus and pair status color with readable status text.",
+      "Do respect reduced motion, reduced transparency, increased contrast, and forced colors.",
+      "Do use the existing inline SVG icon language and native Windows window controls."
+    ],
+    "donts": [
+      "Don't add decorative raster artwork or a display font to this utility.",
+      "Don't apply toolbar translucency across the workspace.",
+      "Don't use status colors as general decorative accents."
+    ]
+  }
+}

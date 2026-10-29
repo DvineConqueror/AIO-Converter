@@ -1,0 +1,66 @@
+{
+  "sevenzip": {
+    "id": "sevenzip",
+    "version": "26.05",
+    "url": "https://github.com/ip7z/7zip/releases/download/26.05/7z2605-x64.exe",
+    "source": "https://github.com/ip7z/7zip/releases/download/26.05/7z2605-src.tar.xz",
+    "license": "LGPL-2.1-or-later AND BSD AND unRAR restriction",
+    "sha256": "fd99e86f57d8f429ef5ed045bf98315af962e2309b0f1ba87a147a44c71647d0"
+  },
+  "imagemagick": {
+    "id": "imagemagick",
+    "version": "7.1.2-34",
+    "url": "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-34/ImageMagick-7.1.2-34-portable-Q16-x64.7z",
+    "sha256": "52cc6a441c7884f5ff4274b410c9b90c4b7d54245dcdf4d32988bb4e4df4e5d1",
+    "source": "https://github.com/ImageMagick/ImageMagick/releases/download/7.1.2-34/ImageMagick-7.1.2-34.7z",
+    "license": "ImageMagick AND delegate licenses"
+  },
+  "poppler": {
+    "id": "poppler",
+    "version": "26.09.0-0",
+    "url": "https://github.com/oschwartz10612/poppler-windows/releases/download/v26.09.0-0/Release-26.09.0-0.zip",
+    "sha256": "7a6f256a0ddf7536182246a5733331bf4677cbcc34f4663774947ad34556c8d0",
+    "source": "https://poppler.freedesktop.org/poppler-26.09.0.tar.xz",
+    "license": "GPL-2.0-or-later AND dependency licenses"
+  },
+  "pandoc": {
+    "id": "pandoc",
+    "version": "3.13",
+    "url": "https://github.com/jgm/pandoc/releases/download/3.13/pandoc-3.13-windows-x86_64.zip",
+    "sha256": "23e1f2e978a3df80db8bf65c9c59534f41a23140480cfb4f783a882ab7dc6a4e",
+    "source": "https://github.com/jgm/pandoc/archive/refs/tags/3.13.tar.gz",
+    "license": "GPL-2.0-or-later"
+  },
+  "ffmpeg": {
+    "id": "ffmpeg",
+    "version": "n9.0.2-36-g6882969ce9",
+    "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2026-10-27-18-38/ffmpeg-n9.0.2-36-g6882969ce9-win64-gpl-shared-9.0.zip",
+    "sha256": "dbfef481021a393424c9bd4e588c8d568f0ebba780c01c63dfcb87c87be901c7",
+    "source": "https://github.com/BtbN/FFmpeg-Builds/tree/autobuild-2026-10-27-18-38",
+    "license": "GPL-3.0-or-later AND dependency licenses"
+  },
+  "libreoffice": {
+    "id": "libreoffice",
+    "version": "26.8.1",
+    "url": "https://download.documentfoundation.org/libreoffice/stable/26.8.1/win/x86_64/LibreOffice_26.8.1_Win_x86-64.msi",
+    "source": "https://download.documentfoundation.org/libreoffice/src/26.8.1/",
+    "license": "MPL-2.0 AND component licenses",
+    "sha256": "c6298b10cfa1748bcbedad94c62ce771e240e5021bfd6d7a967cd571b04b5312"
+  },
+  "yt-dlp": {
+    "id": "yt-dlp",
+    "version": "2026.10.26",
+    "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.10.26/yt-dlp.exe",
+    "sha256": "f5389d3698ecde4ef06f4e6b1ce0294fe9ac1396228c8990b8d3416d6d177a7d",
+    "source": "https://github.com/yt-dlp/yt-dlp/tree/2026.10.26",
+    "license": "Unlicense (core); GPL-3.0-or-later and bundled dependency licenses (standalone executable)"
+  },
+  "deno": {
+    "id": "deno",
+    "version": "2.9.8",
+    "url": "https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-pc-windows-msvc.zip",
+    "sha256": "cba84b26e0df5ae7f74fc66b86a95b866872a86292ebd84fa1e959927edd93bf",
+    "source": "https://github.com/denoland/deno/tree/v2.9.8",
+    "license": "MIT AND bundled dependency licenses"
+  }
+}

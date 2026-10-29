@@ -1,0 +1,28 @@
+node_modules/
+dist/
+dist-electron/
+release/
+vendor/
+.cache/
+.playwright-cli/
+output/
+*.log
+
+# Local configuration, credentials, and signing material
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.tsbuildinfo
